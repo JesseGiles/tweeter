@@ -13,9 +13,11 @@ nav {
 }
 
 nav span {
+  color: #ffffff;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: normal;
   font-style: normal;
-  color: #FFFFFF;
+  font-size: 24px;
 }
 
 .logo {
@@ -30,8 +32,3 @@ nav span {
   color: red;
   align-items: center;
 }
-
-.container {
-  margin-top: 140px;
-}
-

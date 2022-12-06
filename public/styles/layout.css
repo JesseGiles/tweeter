@@ -14,17 +14,22 @@ html {
  * Global layout stuff
  */
 
-body {
-  color: #ffffff;
+ body {
+  display: flex;
+  flex-direction: column;
+  color: #545149;
   background-color: #f4f1ec;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: normal;
-  font-style: normal;
   font-size: 24px;
+  align-items: center;
 }
 
-header {
-  
+main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  width: 90%;
+  background-color: #f4f1ec;
+  align-items: center;
 }
 
 /*

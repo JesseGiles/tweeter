@@ -3,9 +3,10 @@ header {
   margin-top: 120px;
   height: 400px;
   width: 100%;
-  background-color: rgb(159, 118, 197);
   flex-direction: column;
   justify-content: center;
+  background-color: #708bcf;
+background-image: url("https://www.transparenttextures.com/patterns/subtle-grey.png");
 }
 
 .profilePic {
@@ -16,4 +17,14 @@ header {
 .username {
   display: flex;
   justify-content: center;
+  color: #ffffff;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+}
+
+.username h2 {
+  margin: 0.25em;
+  font-weight: normal;
 }
