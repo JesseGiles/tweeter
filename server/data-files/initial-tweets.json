@@ -1,24 +1,36 @@
 [
   {
     "user": {
-      "name": "Newton",
-      "avatars": "https://i.imgur.com/73hZDYK.png"
-      ,
-      "handle": "@SirIsaac"
+      "name": "Andre the Giant",
+      "avatars": "https://i.imgur.com/73hZDYK.png",
+      "handle": "@Fezzik_PrincessBride"
     },
     "content": {
-      "text": "If I have seen further it is by standing on the shoulders of giants"
+      "text": "Anybody want a peanut?"
     },
-    "created_at": 1461116232227
+    "created_at": 1670080690641
   },
   {
     "user": {
-      "name": "Descartes",
+      "name": "Regina George",
       "avatars": "https://i.imgur.com/nlhLi3I.png",
-      "handle": "@rd" },
-    "content": {
-      "text": "Je pense , donc je suis"
+      "handle": "@meangirl"
     },
-    "created_at": 1461113959088
+    "content": {
+      "text": "Stop trying to make fetch happen, its NOT going to happen!"
+    },
+    "created_at": 1670167090641
+  },
+  {
+    "user": {
+      "name": "Egon Spengler",
+      "avatars": "https://i.imgur.com/DVpDmdR.png",
+      "handle": "@ghostbustin"
+    },
+    "content": {
+      "text": "I collect spores, molds and fungus"
+    },
+    "created_at": 1670080690641
   }
 ]
+
