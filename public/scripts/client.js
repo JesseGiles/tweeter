@@ -6,6 +6,17 @@
 
 $(document).ready(function () {
 
+  $.ajax({
+    method: 'GET',
+    url: '/tweets',
+    success: (response) => {
+      console.log(response);
+    },
+    error: (err) => {
+      console.log(err);
+    }
+  });
+
   const tweetDB = [
     {
       "user": {
@@ -21,33 +32,25 @@ $(document).ready(function () {
 
     {
       "user": {
-        "name": "Descartes",
+        "name": "Sia",
         "avatars": "https://i.imgur.com/nlhLi3I.png",
-        "handle": "@rd"
+        "handle": "@BigWig"
       },
       "content": {
-        "text": "Je pense , donc je suis"
+        "text": "I'm gonna swing from the chandeliers"
       },
       "created_at": 1461113959088
     }
   ]
 
-  //loops through array of tweets, calls createTweetElement function on each, returns value as HTML markup and appends to tweets container on index
-  const renderTweets = function (array) {
-
-    for (tweets of array) {
-    createTweetElement(tweets);
-    }
-
-  }
-
+  //receieves individual tweets, fed to it by renderTweets function looping the tweet array, and generates a jQuery variable for each tweet so they can be appended to the tweet container in the index.html
   const createTweetElement = function (tweet) {
     // const dateMade = tweet.created_at;
     // const currentDate = new Date(0);
     // //currentDate.setUTCSeconds(dateMade);
     // const tweetDate = new Date(dateMade);
 
-    const markup = `
+  let $tweet = `
   <article>
     <header class="tweet-header">
       <div class="person">
@@ -69,16 +72,21 @@ $(document).ready(function () {
     </footer>
   </article>
   `
-    return markup;
+    console.log($tweet); // to see what it looks like
+    return $tweet;
   }
 
-  //store returned html article markup as jQuery var for appending to main html
-  const $tweet = createTweetElement(tweetData);
+  //loops through array of tweets, calls createTweetElement function on each, returns value as HTML via jQuery var $tweet and appends to tweets container on index
+  const renderTweets = function (array) {
 
-  // Test / driver code (temporary)
-  console.log($tweet); // to see what it looks like
-  $('#tweets-container').append($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
+    for (tweets of array) {
+    let formattedTweet = createTweetElement(tweets);
+    $('#tweets-container').append(formattedTweet);
+    }
 
+  }
+
+  // to add it to the page so we can make sure it's got all the right elements, classes, etc.
   renderTweets(tweetDB);
 
 });
