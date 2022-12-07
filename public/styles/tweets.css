@@ -1,10 +1,9 @@
-section.tweet-container {
+#tweets-container {
   width: 100%;
 } 
 
 article {
   width: 100%;
-  margin-top: 40px;
   border: solid black;
   padding: 10px;
   margin-bottom: 50px;
@@ -12,6 +11,11 @@ article {
 
 article:hover {
   box-shadow:  5px 6px 3px rgb(64 86 161 / 31%);;
+}
+
+article p {
+  padding-left: 10px;
+  padding-bottom: 10px;
 }
 
 .tweet-header {
@@ -27,6 +31,8 @@ font-size: 22px;
   align-items: center;
   font-size: 14px;
   border-top: solid;
+  padding-left: 10px;
+  padding-bottom: 10px;
 }
 
 .logos {
@@ -45,10 +51,11 @@ a:hover {
 
 .person {
   align-items: center;
-  width: 135px;
+  width: fit-content;
+  font-weight: normal;
 }
 
-.user-tag {
+.user-handle {
   font-size: large;
   color: #708bcf6b;
   padding: 10px;
@@ -57,4 +64,5 @@ a:hover {
 .person img {
   width: 45px;
   height: auto;
+  padding-right: 5px;
 }
