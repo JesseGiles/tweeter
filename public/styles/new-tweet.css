@@ -37,13 +37,10 @@ font-family: 'Bungee', sans-serif;
 color: white;
 }
 
-div {
-  display: flex;
+/* div.tweet-button {
   font-family: 'Bungee', sans-serif;
   color: black;
-  justify-content: space-between;
-  margin-top: 10px;
-}
+} */
 
 .new-tweet .counter {
   font-family: 'Bungee', sans-serif;

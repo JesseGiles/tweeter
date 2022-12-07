@@ -35,6 +35,12 @@ main {
   align-items: baseline;
 }
 
+div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
