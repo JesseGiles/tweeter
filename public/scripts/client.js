@@ -22,10 +22,16 @@ $(document).ready(function () {
 
   //receieves individual tweets, fed to it by renderTweets function looping the tweet array, and generates a jQuery variable for each tweet so they can be appended to the tweet container in the index.html
   const createTweetElement = function (tweet) {
-    // const dateMade = tweet.created_at;
-    // const currentDate = new Date(0);
-    // //currentDate.setUTCSeconds(dateMade);
-    // const tweetDate = new Date(dateMade);
+   
+    //escape function for incoming use- provided text on tweet form to ensure it cannot be used maliciously
+    const escape = function (str) {
+      let div = document.createElement("div");
+      div.appendChild(document.createTextNode(str));
+      return div.innerHTML;
+    };
+
+    //wrapping return of tweet form passed in escape function, wrapped in <p> tag and stored in a var so it could be used in header for building individual tweets below
+    const safeHTML =`<p>${escape(tweet.content.text)}</p>`;
 
     let header = `
   <article>
@@ -37,7 +43,7 @@ $(document).ready(function () {
       <span class="user-handle">${tweet.user.handle}</span>
     </header>
 
-    <p>${tweet.content.text}</p>
+    ${safeHTML}
 
     <footer class="tweet-footer">
       <span>${timeago.format(tweet.created_at)}</span>
@@ -88,7 +94,8 @@ $(document).ready(function () {
       //use serialized data to make POST req to /tweets to update database
       $.post('/tweets', data, (response) => {
         loadTweets(); //once tweet DB is updated, reload it in container
-        
+        $("textarea").val("");
+        $("#counter").val("140");
       })
     }
   });

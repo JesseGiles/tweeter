@@ -34,6 +34,9 @@ nav span {
 }
 
 p {
+  display: flex;
+  overflow-wrap: anywhere;
   font-size: large;
+
   
 }
