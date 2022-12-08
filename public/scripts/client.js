@@ -77,17 +77,23 @@ $(document).ready(function () {
 
   //when form submitted with a new tweet
   $form.on('submit', (event) => {
+
+    //slide any prev error message out of view when resubmitted
+    $(".error").slideUp();
+
     //prevent default form action (refresh page/POST)
     event.preventDefault();
 
     //validate data in the form before url-endcoding or posting
     const tweetContent = $('#tweet-text').val().trim();
     if (!tweetContent) {
-      $(".error").css("visibility", "visible")
       $(".error-message").text("Please enter in a message before Tweet™ing!")
+      $(".error").slideDown()
+      
     } else if (tweetContent.length > 140) {
-      $(".error").css("visibility", "visible")
       $(".error-message").text("This Tweet™ is over the 140 char limit, please shorten your tweet!")
+      $(".error").slideDown()
+      
     } else if (tweetContent && tweetContent.length < 140) {
 
       //get the data entered in the form as url-encoded (server requirement)

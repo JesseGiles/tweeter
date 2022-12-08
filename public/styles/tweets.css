@@ -68,8 +68,7 @@ a:hover {
 }
 
 .error {
-  display: flex;
-  visibility: hidden;
+  display: none;
   justify-content: space-evenly;
   width: 75%;
   padding-top: 2px;
@@ -77,7 +76,7 @@ a:hover {
   font-size: medium;
   color: white;
   background-color: red;
-  border: 2px black dotted;
+  border: 1px black dotted;
 }
 
 .error-message {
