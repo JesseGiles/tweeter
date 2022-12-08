@@ -7,10 +7,11 @@ article {
   border: solid black;
   padding: 10px;
   margin-bottom: 25px;
+  border-radius: 15px;
 }
 
 article:hover {
-  box-shadow:  5px 6px 3px rgb(64 86 161 / 31%);;
+  box-shadow:  5px 6px 3px rgb(64 86 161 / 31%);
 }
 
 article p {
@@ -70,19 +71,21 @@ a:hover {
 .error {
   display: none;
   justify-content: space-evenly;
+  align-items: center;
   margin-top: 0px;
   width: 75%;
-  padding-top: 2px;
-  padding-top: 2px;
+  padding: 4px;
   font-size: medium;
   color: white;
   background-color: red;
   border: 1px black dotted;
+  border-radius: 5px;
 }
 
 .error-message {
   width: 75%;
   font-size: medium;
   color: white;
+  text-align: center;
   background-color: red;
 }

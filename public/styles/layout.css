@@ -29,8 +29,7 @@ html {
 main {
   display: flex;
   flex-direction: column;
-  margin-top: 0;
-  width: 90%;
+  margin: 0 20px 0;
   background-color: #f4f1ec;
   align-items: baseline;
 }
@@ -41,6 +40,63 @@ div {
   margin-top: 10px;
 }
 
+header.profile {
+  margin-top: 90px;
+  margin-bottom: 20px;
+  height: 400px;
+  width: 100%;
+}
+
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+ /* Mobile Styles */
+
+@media only screen {
+  .main {
+    text-align: center;
+  }
+
+  nav {
+    background-color: #708bcf;
+    /* opacity: 90%; */
+    background-image: url("https://www.transparenttextures.com/patterns/subtle-grey.png");
+  }
+
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 768px) {
+
+  nav {
+    background-color: #4056A1;
+    background-image: none;
+  }
+
+  body {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .container {
+    margin-top: 185px;
+    width: 55%;
+  }
+
+  header.profile {
+    margin: 185px 20px 20px;
+    width: 45%;
+  }
+
+  .new-tweet h2 {
+    margin-top: -5px;
+  }
+
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 1024px) {
+
+
+}

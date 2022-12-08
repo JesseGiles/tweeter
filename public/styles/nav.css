@@ -3,10 +3,9 @@
 nav {
   position: fixed;
   display: flex;
-  height: 120px;
+  height: 90px;
   width: 100vw;
   padding: 0 1.5em;
-  background-color: #4056A1;
   justify-content: space-between;
   top: 0;
   align-items: center;
@@ -34,12 +33,20 @@ nav span {
   align-items: center;
 }
 
-.nav-arrow:hover {
+.nav-arrow-button {
+  background-color: transparent;
+  border: none;
+  border-radius: 15px;
+}
+
+.nav-arrow-button:hover {
+  cursor: pointer;
   color: red;
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-name: bounce;
   animation-timing-function: ease;
+  box-shadow:  5px 6px 3px rgb(64 86 161 / 31%);
 }
 
 @keyframes bounce {
@@ -51,6 +58,5 @@ nav span {
 p {
   display: flex;
   width: 85%;
-  overflow-wrap: anywhere;
   font-size: large;
 }
