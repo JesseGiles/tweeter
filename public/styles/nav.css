@@ -23,14 +23,29 @@ nav span {
 .logo {
   font-family: 'Bungee', sans-serif;
   align-self: flex-end;
-  padding-bottom: 20px;
+  font-size: 1.5em;
+  padding-bottom: 10px;
 }
 
-.newTweet {
+.nav-newTweet {
   display: flex;
   flex-direction: column;
   color: red;
   align-items: center;
+}
+
+.nav-arrow:hover {
+  color: red;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: bounce;
+  animation-timing-function: ease;
+}
+
+@keyframes bounce {
+0%   { transform: translateY(0); }
+50%  { transform: translateY(-15px); }
+100% { transform: translateY(0); }
 }
 
 p {

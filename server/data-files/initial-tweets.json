@@ -8,18 +8,7 @@
     "content": {
       "text": "Anybody want a peanut?"
     },
-    "created_at": 1670212098193
-  },
-  {
-    "user": {
-      "name": "Regina George",
-      "avatars": "https://i.imgur.com/nlhLi3I.png",
-      "handle": "@meangirl"
-    },
-    "content": {
-      "text": "Stop trying to make fetch happen, its NOT going to happen!"
-    },
-    "created_at": 1670298498193
+    "created_at": 1670133665696
   },
   {
     "user": {
@@ -30,6 +19,28 @@
     "content": {
       "text": "I collect spores, molds and fungus"
     },
-    "created_at": 1670384898193
+    "created_at": 1670220065696
+  },
+  {
+    "user": {
+      "name": "Roy Batty",
+      "avatars": "https://i.imgur.com/5fUVPRP.png",
+      "handle": "@Nexus6Replicant"
+    },
+    "content": {
+      "text": "I've seen things you.. people, wouldn't believe. Attack ships on fire off the shoulder of Orion. I watched C-beams glitter in the dark.."
+    },
+    "created_at": 1670306465696
+  },
+  {
+    "user": {
+      "name": "Roy Batty",
+      "avatars": "https://i.imgur.com/5fUVPRP.png",
+      "handle": "@Nexus6Replicant"
+    },
+    "content": {
+      "text": "..near the Tannhauser gate. All those.. moments, will be lost in time... like tears in rain... Time to die."
+    },
+    "created_at": 1670392865696
   }
 ]

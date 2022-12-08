@@ -6,6 +6,14 @@
 
 $(document).ready(function () {
 
+  //added stretch functionality, animated arrow in nav bar can be used to slide the new-tweet area in and out of
+  const $navArrow = $(".nav-arrow")
+
+  $navArrow.click(function() {
+    $(".new-tweet").slideToggle("slow");
+  })
+  
+
   // CODE FOR RETRIEVING STORED TWEET DATA /////////////////
 
   //function using jQuery to make an AJAX GET request to /tweets and retrieve the stored array of tweets as JSON, then call renderTweets function on it
