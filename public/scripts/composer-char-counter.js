@@ -2,7 +2,6 @@
 $(document).ready(function () {
 
   //event listener tracking input changes to tweet form
-  // $('#tweet-text').bind('input propertychange', function() {
   $('#tweet-text').on('keydown', function () {
 
     //track sum of each input entered
@@ -23,9 +22,6 @@ $(document).ready(function () {
     } else {
       $theCounter.removeClass('overlimit');
     }
-
-    console.log(`typed chars: `, typedChars)
-    console.log('remaining chars: ', charsRemaining);
 
   })
 
