@@ -83,9 +83,11 @@ $(document).ready(function () {
     //validate data in the form before url-endcoding or posting
     const tweetContent = $('#tweet-text').val().trim();
     if (!tweetContent) {
-      alert("Please enter in a message before Tweet™ing!")
+      $(".error").css("visibility", "visible")
+      $(".error-message").text("Please enter in a message before Tweet™ing!")
     } else if (tweetContent.length > 140) {
-      alert("This Tweet™ is over the 140 char limit, please shorten your tweet!")
+      $(".error").css("visibility", "visible")
+      $(".error-message").text("This Tweet™ is over the 140 char limit, please shorten your tweet!")
     } else if (tweetContent && tweetContent.length < 140) {
 
       //get the data entered in the form as url-encoded (server requirement)

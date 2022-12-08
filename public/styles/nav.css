@@ -35,8 +35,7 @@ nav span {
 
 p {
   display: flex;
+  width: 85%;
   overflow-wrap: anywhere;
   font-size: large;
-
-  
 }

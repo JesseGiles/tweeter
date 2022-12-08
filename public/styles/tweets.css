@@ -66,3 +66,25 @@ a:hover {
   height: auto;
   padding-right: 5px;
 }
+
+.error {
+  display: flex;
+  visibility: hidden;
+  justify-content: space-evenly;
+  width: 75%;
+  padding-top: 2px;
+  padding-top: 2px;
+  font-size: medium;
+  color: white;
+  background-color: red;
+  border: 2px black dotted;
+}
+
+.error-message {
+  /* display: flex;
+  justify-content: space-evenly; */
+  width: 75%;
+  font-size: medium;
+  color: white;
+  background-color: red;
+}
