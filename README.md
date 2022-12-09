@@ -10,9 +10,9 @@ Some project stretch functionality was implemented - an animated 'Write a new tw
 
 ## Final Product
 
-!["Screenshort of URLs page"](https://github.com/JesseGiles/tinyapp/blob/master/docs/urls_page.png?raw=true)
-!["Screenshot of TinyURL view/edit page"](https://github.com/JesseGiles/tinyapp/blob/master/docs/edit_tinyurl_page.png?raw=true)
-!["Screenshot of registration page"](https://github.com/JesseGiles/tinyapp/blob/master/docs/register_page.png?raw=true)
+!["Screenshot of Tweeter Desktop app view"](https://github.com/JesseGiles/tweeter/blob/master/docs/desktop-view-form-hidden.png?raw=true)
+!["Screenshot of Tweeter Desktop app view with tweet form displayed & error"](https://github.com/JesseGiles/tweeter/blob/master/docs/desktop-view-error-message.png?raw=true)
+!["Screenshot of Tweeter Mobile app view"](https://github.com/JesseGiles/tweeter/blob/master/docs/mobile-view.png?raw=true)
 
 ## Dependencies
 
