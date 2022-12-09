@@ -6,7 +6,7 @@ This app was built as a project during the Lighthouse Labs Web Development bootc
 
 Tweeter allows users to view a database of previously-generated "tweets", where the tweeter's profile picture, name, handle and message and date (via timeago) are dynamically populated into a container in the HTML body. Users can write their own tweets and see it seamlessly added to the top of the list via AJAX request. A random user is generated with each tweet. Additionally, a live counter keeps track of how many characters were inputted in the tweet form, and returns an error if the user tries to send an empty tweet, or one over the character limit. Media querys, along with CSS and Flexboxes were utitlized to allow the page to have a different layout for mobile or desktop users by changing the side of the viewport (at 768px). 
 
-Some project stretch functionality was implemented - an animated 'Write a new tweet' button in the navigation bar was created which, when clicked, slides the 'Compose Tweet' form in and out of sight via JQuery. Also utlitized a free, open-source CSS button (Unite) provided via https://bttn.surge.sh/ for use as the 'Tweet' submit button, partially modified for consistency with Tweeter design.
+Some project stretch functionality was implemented - an animated 'Write a new tweet' button in the navigation bar was created which, when clicked, slides the 'Compose Tweet' form in and out of sight. Also utlitized a free, open-source CSS button (Unite) provided via https://bttn.surge.sh/ for use as the 'Tweet' submit button, partially modified for consistency with Tweeter design.
 
 ## Final Product
 
