@@ -1,14 +1,14 @@
 //only executes this code once document fully loads
-$(document).ready(function () {
+$(document).ready(function() {
 
   //event listener tracking input changes to tweet form
-  $('#tweet-text').on('keydown', function () {
+  $('#tweet-text').on('keydown', function() {
 
     //track sum of each input entered
     let typedChars = $(this).val().length;
 
     //set tweet character limit
-    charsRemaining = 140 - typedChars;
+    let charsRemaining = 140 - typedChars;
 
     //create variable that references counter location
     const $theCounter = $(this).closest('form').find('.counter');
@@ -23,6 +23,6 @@ $(document).ready(function () {
       $theCounter.removeClass('overlimit');
     }
 
-  })
+  });
 
 });

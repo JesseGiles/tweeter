@@ -13,6 +13,7 @@
   border-right-style: hidden;
   border-left-style: hidden;
   border-bottom: solid;
+  height: auto;
   width: 100%;
   font-size: 16px;
   font-weight: bold;
@@ -31,13 +32,6 @@ main label {
   font-weight: bold;
   font-style: normal;
   font-size: 24px;
-}
-
-main button {
-display: flex;
-background-color: #4056A1;
-font-family: 'Bungee', sans-serif;
-color: white;
 }
 
 .new-tweet .counter {

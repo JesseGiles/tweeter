@@ -11,6 +11,7 @@ article {
 }
 
 article:hover {
+  background-color: #ebe1ce;
   box-shadow:  5px 6px 3px rgb(64 86 161 / 31%);
 }
 

@@ -32,6 +32,7 @@ main {
   margin: 0 20px 0;
   background-color: #f4f1ec;
   align-items: baseline;
+  overflow-wrap: anywhere;
 }
 
 div {
@@ -59,9 +60,8 @@ header.profile {
   }
 
   nav {
-    background-color: #708bcf;
-    /* opacity: 90%; */
-    background-image: url("https://www.transparenttextures.com/patterns/subtle-grey.png");
+    background-color: #4056a1;
+    background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
   }
 
 }
@@ -80,13 +80,13 @@ header.profile {
   }
 
   .container {
-    margin-top: 185px;
+    margin-top: 150px;
     width: 55%;
   }
 
   header.profile {
-    margin: 185px 20px 20px;
-    width: 45%;
+    margin: 150px 20px 20px;
+    width: 40%;
   }
 
   .new-tweet h2 {
@@ -98,5 +98,10 @@ header.profile {
 /* Desktop styles */
 @media only screen and (min-width: 1024px) {
 
+  .container {
+    display: flex;
+    margin-top: 150px;
+    width: 55%;
+  } 
 
 }
